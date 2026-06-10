@@ -23,6 +23,13 @@ It demonstrates the end-to-end machine learning workflow: preprocessing, model b
    git clone https://github.com/yourusername/mnist-digit-classification.git
    cd mnist-digit-classification
 
+   ## 📊 Results
+Example predictions:
+![True 7, Predicted 7](results/true7_pred7.png)
+![True 2, Predicted 2](results/true2_pred2.png)
+![True 9, Predicted 9](results/true9_pred9.png)
+![True 5, Predicted 3](results/true5_pred3.png)
+
 Key Features
 1) Normalization of pixel values for faster convergence.
 2) Dense neural network with ReLU and Softmax layers.
