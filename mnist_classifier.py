@@ -1,6 +1,8 @@
 import tensorflow as tf
 from tensorflow.keras import datasets, layers, models
 import matplotlib.pyplot as plt
+import os
+os.makedirs("results", exist_ok=True)
 
 # Load MNIST dataset
 (x_train, y_train), (x_test, y_test) = datasets.mnist.load_data()
@@ -41,4 +43,5 @@ for i in indices:
 
     plt.imshow(img, cmap='gray')
     plt.title(f"True: {label}, Predicted: {predicted_label}")
-    plt.show()
+    plt.savefig(f"results/true{label}_pred{predicted_label}.png")
+    plt.close()
